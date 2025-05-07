@@ -1,6 +1,6 @@
 import { projectData } from "@/data/servicesData/servicesData";
 import Image from "next/image";
-import bgImage from "@/assets/bg.png"; // make sure this path is correct
+import bgImage from "@/assets/bg.png"; 
 
 export default function ServiceDetails({ params }) {
   const id = parseInt(params.id);
@@ -21,29 +21,29 @@ export default function ServiceDetails({ params }) {
         <h1 className="bg-gradient-to-r from-[#003917] to-[#4DC16F] bg-clip-text text-3xl md:text-5xl text-transparent font-bold mb-4">
           ARCHITECTURE
         </h1>
-        <p className="font-Inter font-semibold text-[#000000] tracking-[.5px]">
+        <p className="font-Poppins font-semibold text-[#000000] tracking-[.5px]">
           Offices, House, Shopping Malls, Showrooms, Restaurant and Institutional
         </p>
 
         <div className="mt-6 flex flex-col md:flex-row justify-between gap-12">
           {/* Text content */}
           <div className="w-full md:w-1/2">
-            <h1 className="font-Inter font-semibold text-[#000000] mb-2">
+            <h1 className="font-Poppins font-semibold text-[#000000] mb-2">
               Residential
             </h1>
-            <p className="font-Inter leading-[24px] tracking-[.5px] text-justify mb-10">
+            <p className="font-Poppins leading-[24px] tracking-[.5px] text-justify mb-10">
               {project.residential}
             </p>
-            <h1 className="font-Inter font-semibold text-[#000000] mb-2">
+            <h1 className="font-Poppins font-semibold text-[#000000] mb-2">
               Office Building
             </h1>
-            <p className="font-Inter leading-[24px] tracking-[.5px] text-justify mb-10">
+            <p className="font-Poppins leading-[24px] tracking-[.5px] text-justify mb-10">
               {project.residential}
             </p>
-            <h1 className="font-Inter font-semibold text-[#000000] mb-2">
+            <h1 className="font-Poppins font-semibold text-[#000000] mb-2">
               Institutional
             </h1>
-            <p className="font-Inter leading-[24px] tracking-[.5px] text-justify mb-10">
+            <p className="font-Poppins leading-[24px] tracking-[.5px] text-justify mb-10">
               {project.residential}
             </p>
           </div>

@@ -15,7 +15,7 @@ import bgLeft from '../../assets/footer-left.png';
 const Footer = () => {
   return (
     <div>
-      <footer className="bg-main w-full font-Inter py-10 relative z-20 overflow-hidden">
+      <footer className="bg-main w-full md:h-[350px] font-Inter py-10 relative z-20 overflow-hidden">
         <div className="footerContainer wrapper px-4 sm:px-6">
           {/* footer top */}
           <div className="flex flex-col md:flex-row gap-8 justify-between">
