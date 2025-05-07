@@ -1,14 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
+import localFont from 'next/font/local'
 import "./globals.css";
+import Navbar from '@/components/Navbar/Navbar';
+import Footer from '@/components/Footer/Footer';
 
-const geistSans = Geist({
+const geistSans = localFont({
+  src: "./font/Poppins-Regular.ttf",
   variable: "--font-geist-sans",
-  subsets: ["latin"],
+  
 });
 
-const geistMono = Geist_Mono({
+const geistMono = localFont({
+  src: './font/Inter_24pt-Regular.ttf',
   variable: "--font-geist-mono",
-  subsets: ["latin"],
+  
 });
 
 export const metadata = {
@@ -22,7 +27,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navbar></Navbar>
+        <main>
         {children}
+        </main>
+        <Footer></Footer>
       </body>
     </html>
   );
