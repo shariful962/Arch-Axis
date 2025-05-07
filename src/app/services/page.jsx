@@ -14,7 +14,7 @@ const Services = () => {
           WHAT WE DO
         </h1>
 
-        <p className="text-justify leading-[24px] tracking-[.5px]">
+        <p className="text-lg text-justify leading-[24px] tracking-[.5px]">
           we provide a comprehensive range of services to help our clients create the home or business of their dreams...
         </p>
 
